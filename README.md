@@ -6,6 +6,8 @@ A simple digital "handpan" like synth based on the Electro-Smith Daisy and the M
 
 Recently I visited a friend that has a company creating handpans, a modern derivative of the steelpan. So for this project I got inspired to create a kind of digital equivalent using the Daisy and the touch sensor!
 
+The name came to be because I was initially playing with a patch based on the `dattorro` reverb algorithm. It runs very well on the Daisy Field, however when I added the MPR121 library things went south and I had to abandon the spaceous reverb effect. The name stuck around though.
+
 ## Build
 
 ### 1. Clone this repository and pull the libDaisy submodule
