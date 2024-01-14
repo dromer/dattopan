@@ -144,6 +144,6 @@ There is plenty of space left to place additional connections and components in 
 
 ![Top of the protoboard](docs/proto_top.jpg)
 
-The header extensions to the output sockets and touch input are bridged using some wires from spare resistor legs.
+The header extensions to the output and touch input sockets are bridged using some wires from spare resistor legs.
 
 ![Bottom of the protoboard](docs/proto_bottom.jpg)
