@@ -1,0 +1,16 @@
+{
+	"name": "dattopan",
+	"som": "seed",
+	"parents": {
+		"touch": {
+			"component": "Mpr121",
+			"pin": {
+				"scl": 11,
+				"sda": 12
+			}
+		}
+	},
+	"audio": {
+    	"channels": 2
+ 	 }
+}

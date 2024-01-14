@@ -1,0 +1,6 @@
+[submodule "heavylib"]
+	path = heavylib
+	url = https://github.com/Wasted-Audio/heavylib.git
+[submodule "libdaisy"]
+	path = libdaisy
+	url = https://github.com/electro-smith/libDaisy.git

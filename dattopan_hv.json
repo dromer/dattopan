@@ -1,0 +1,6 @@
+{
+    "daisy": {
+      "board_file": "dattopan_board.json",
+      "bootloader": "BOOT_SRAM"
+    }
+}
