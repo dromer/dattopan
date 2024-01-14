@@ -117,10 +117,31 @@ Now put your daisy into bootloader mode (click reset, then click boot), compile 
 
 ## Images
 
+It's a box! The touch inputs are simple metal push-pins. It has two outputs on the side.
+
 ![Outside of the box](docs/box.jpg)
+
+Everything fits on a simple protoboard with a flatcable soldered to the pins. Both the touch inputs and the audio outputs are connected to the protoboard with a separate header for easy (dis)assembly.
 
 ![Inside of the box](docs/box_inside.jpg)
 
+Only a couple connections are needed:
+
+| Pins  | Type   | Description |
+| ----- | ------ | ----------- |
+| 21    | Power  | red wire    |
+| 20/40 | Ground | brown and blue wires |
+| 19    | Left   | output header |
+| 18    | Right  | output header |
+| 13    | SDA    | orange wire |
+| 12    | SCL    | green wire |
+
+Then two 4k7 pull-up resistors between SDA/SCL and 3.3v.
+
+There is plenty of space left to place additional connections and components in the future.
+
 ![Top of the protoboard](docs/proto_top.jpg)
+
+The header extensions to the output sockets and touch input are bridged using some wires from spare resistor legs.
 
 ![Bottom of the protoboard](docs/proto_bottom.jpg)
