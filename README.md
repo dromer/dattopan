@@ -14,7 +14,7 @@ The main patch is just 8 instances of the `dattone.pd` voice with initialization
 
 ![Main patch](docs/patch_main.jpg)
 
-The touch input filters changes from the number stream and selects 0/off or 1/on messages:
+The subpatch sets up a touch input in which we filter for changes in the continuous number stream and select 0 (off) or 1 (on) messages:
 
 ![Touch input](docs/patch_sub1.jpg)
 
@@ -22,13 +22,20 @@ The main voice is a sawtooth oscillator. One envelope fades in and out some vibr
 
 ![Main voice](docs/patch_sub2.jpg)
 
-In addition when you activate the voice a little percussive hit is triggered, based on some whitenoise that is filtered to the frequency of the specific oscillator (so every voice has a uniquue percussion). A little exponential envelope shapes the sound:
+In addition when you activate the voice a little percussive hit is triggered, based on some whitenoise that is filtered to the frequency of the specific oscillator (so every voice has a unique percussion). A little exponential envelope shapes the sound:
 
 ![Percussive hit](docs/patch_sub3.jpg)
 
 Finally there is a lowpass filter with a bit of resonance to make the sound a bit more distinct:
 
 ![Lowpass filter](docs/patch_sub4.jpg)
+
+## Config
+
+There are two files needed to configure the patch.
+
+- `dattopan_hv.json` - This file is used by Heavy and points to the board configuration and sets the type of Daisy build. In our case we use the bootloader and flash to SRAM.
+- `dattopan_board.json` - This is the actual board setup and sets which system-on-module we are using. The touch controller. And the number of audio channels.
 
 ## Build
 
