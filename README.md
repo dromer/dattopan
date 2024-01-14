@@ -10,7 +10,9 @@ The name came to be because I was initially playing with a patch based on the `d
 
 ## Build
 
-### 1. Clone this repository and pull the libDaisy submodule
+### 1. Get the source
+
+Clone this repository and pull the libDaisy submodule:
 
 ```bash
 ~$ git clone https://github.com/dromer/dattopan.git
@@ -18,7 +20,7 @@ The name came to be because I was initially playing with a patch based on the `d
 ~$ git submodule update --init --recursive
 ```
 
-### 2.Build the libDaisy toolchain
+### 2. Build the libDaisy toolchain
 
 > **_NOTE:_** libDaisy requires gcc-arm-none-eabi v10.2 !
 
@@ -27,14 +29,18 @@ The name came to be because I was initially playing with a patch based on the `d
 ~$ make
 ```
 
-### 3. Install `hvcc` and go to the root of this repository to convert the pd patch into C/C++ code
+### 3. Convert the PD patch to C/C++
+
+> **_NOTE:_** This requires having Python and pip installed.
+
+Install `hvcc` and go to the root of this repository to convert the pd patch into C/C++ code:
 
 ```bash
 ~$ pip install hvcc
 ~$ hvcc dattopan.pd -n dattopan -g daisy -m dattopan_hv.json -p heavylib
 ```
 
-### 4, Go to the source dir
+### 4. Go to the source dir
 
 ```bash
 ~$ cd daisy/source/
@@ -68,7 +74,7 @@ Put your daisy into flashing mode (press and hold boot, click reset, release boo
 
 ### 7. Build and flash the firmware
 
-Now put your daisy into bootloader mode (click reset, then click boot), compile and upload the dattopan firmware
+Now put your daisy into bootloader mode (click reset, then click boot), compile and upload the dattopan firmware:
 
 ```bash
 ~$ make
