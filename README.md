@@ -8,6 +8,8 @@ Recently I visited a friend that has a company creating handpans, a modern deriv
 
 The name came to be because I was initially playing with a patch based on the `dattorro` reverb algorithm. It runs very well on the Daisy Field, however when I added the MPR121 library things went south and I had to abandon the spaceous reverb effect. The name stuck around though.
 
+The current tuning is based on a Celtic Minor scale in C# which was basically the first one I found on [this site](https://www.sarazhandpans.com/handpan-scales/).
+
 ## Patch
 
 The main patch is just 8 instances of the `dattone.pd` voice with initialization for the touch input and frequency. Each voice is routed to either left, right or both outputs for a bit of crude panning:
