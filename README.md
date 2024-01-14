@@ -40,17 +40,7 @@ The name came to be because I was initially playing with a patch based on the `d
 ~$ cd daisy/source/
 ```
 
-### 5. Install the bootloader
-
-> **_NOTE:_** If you already have the bootloader skip this step and go straight to step 6
-
-Put your daisy into flashing mode (press and hold boot, click reset, release boot) and program the bootloader:
-
-```bash
-~$ make program-boot
-```
-
-### 6. Edit the header file
+### 5. Edit the header file
 
 Open `HeavyDaisy_dattopan.hpp` and modify these 2 lines:
 
@@ -64,6 +54,16 @@ Either remove them or comment them out:
 ```cpp
     // touch_config.scl = som.GetPin(11);
     // touch_config.sda = som.GetPin(12);
+```
+
+### 6. Install the bootloader
+
+> **_NOTE:_** If you already have the bootloader skip this step and go straight to step 7
+
+Put your daisy into flashing mode (press and hold boot, click reset, release boot) and program the bootloader:
+
+```bash
+~$ make program-boot
 ```
 
 ### 7. Build and flash the firmware
